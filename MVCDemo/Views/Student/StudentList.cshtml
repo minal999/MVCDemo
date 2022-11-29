@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "StudentList";
+}
+<style>
+    table{
+        text-align:center
+    }
+
+    th {
+        background-color: #04AA6D
+    }
+</style>
+<h4>StudentList with ViewData</h4>
+@*<p>
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Total Marks</th>
+            <th>Percentage</th>
+        </tr>
+        
+            @foreach(Student item in (IEnumerable<Student>)ViewData["studlist"])
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.StudName</td>
+                <td>@item.Total_Marks</td>
+                <td>@item.Percentage</td>
+            </tr>
+            }
+       
+    </table>
+</p>
+
+<h4>StudentList with ViewBag</h4>
+<p>
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Total Marks</th>
+            <th>Percentage</th>
+        </tr>
+
+        @foreach (Student item in ViewBag.studlist)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.StudName</td>
+                <td>@item.Total_Marks</td>
+                <td>@item.Percentage</td>
+            </tr>
+        }
+
+    </table>
+</p>*@
+
